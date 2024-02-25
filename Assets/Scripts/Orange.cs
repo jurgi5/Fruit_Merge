@@ -18,7 +18,7 @@ public class Orange : MonoBehaviour
             int totalScore = PlayerPrefs.GetInt("TotalScore", 0);
             totalScore += scoreValue;
             PlayerPrefs.SetInt("TotalScore", totalScore);
-
+            print(totalScore);
             PlayerPrefs.Save();
 
             Vector3 collisionPosition = collision.contacts[0].point;
