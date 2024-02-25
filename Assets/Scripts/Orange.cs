@@ -6,15 +6,26 @@ public class Orange : MonoBehaviour
 {
     public int scoreValue = 0;
     public GameObject coconutPrefab;
+    private int counter = 0;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Orange"))
         {
-            Vector3 collisionPosition = collision.transform.position;
-            Instantiate(coconutPrefab, collisionPosition, Quaternion.identity);
+            counter++;
+            Vector3 collisionPosition = collision.contacts[0].point;    
             Destroy(collision.gameObject);
             Destroy(gameObject);
+            if (counter % 2 == 0)
+            {
+                Instantiate(coconutPrefab, collisionPosition, Quaternion.identity);
+            }
         }
     }
+
+    private void Update()
+    {
+        print(counter);
+    }
+
 }

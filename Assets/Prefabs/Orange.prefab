@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1833048287289917091}
   - component: {fileID: 9151440467554354895}
   - component: {fileID: -6100123029351065332}
+  - component: {fileID: 4334456000303347711}
   m_Layer: 0
   m_Name: Orange
   m_TagString: Orange
@@ -148,3 +149,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &4334456000303347711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4389727911641738927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6e90c4e430ccb44bdd50f6cc01e2ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 0
+  coconutPrefab: {fileID: 2945777957440063345, guid: 2cf7b2747936db34ba4cfd6fc8e056ac, type: 3}
