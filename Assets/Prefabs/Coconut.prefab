@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9173039685484077545}
   - component: {fileID: -3851900877470767936}
   - component: {fileID: -8559353160549294793}
+  - component: {fileID: 688690740873382975}
   m_Layer: 0
   m_Name: Coconut
   m_TagString: Coconut
@@ -148,3 +149,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &688690740873382975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945777957440063345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ff81f50551f4147a09eaa54a95983e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 0
+  watermelonPrefab: {fileID: 7278450361245314282, guid: e48cbe9a98e3c87409eb5f7f2be1f2d8, type: 3}
