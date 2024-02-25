@@ -161,5 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3923d2168cd66f245a12c08d27dac3f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 0
+  scoreValue: 7
   orangePrefab: {fileID: 4389727911641738927, guid: cd5187117ada014409ccba9222207849, type: 3}

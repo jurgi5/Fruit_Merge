@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Watermelon : MonoBehaviour
 {
-    public int scoreValue = 12;
+    public int scoreValue = 7;
     public GameObject orangePrefab;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -14,6 +14,10 @@ public class Watermelon : MonoBehaviour
             int collisionCount = PlayerPrefs.GetInt("WatermelonCollisionCount", 0);
             collisionCount++;
             PlayerPrefs.SetInt("WatermelonCollisionCount", collisionCount);
+
+            int totalScore = PlayerPrefs.GetInt("TotalScore", 0);
+            totalScore += scoreValue;
+            PlayerPrefs.SetInt("TotalScore", totalScore);
 
             PlayerPrefs.Save();
 

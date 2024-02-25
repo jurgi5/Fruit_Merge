@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coconut : MonoBehaviour
 {
-    public int scoreValue = 5;
+    public int scoreValue = 3;
     public GameObject watermelonPrefab;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -14,6 +14,10 @@ public class Coconut : MonoBehaviour
             int collisionCount = PlayerPrefs.GetInt("CoconutCollisionCount", 0);
             collisionCount++;
             PlayerPrefs.SetInt("CoconutCollisionCount", collisionCount);
+
+            int totalScore = PlayerPrefs.GetInt("TotalScore", 0);
+            totalScore += scoreValue;
+            PlayerPrefs.SetInt("TotalScore", totalScore);
 
             PlayerPrefs.Save();
 
